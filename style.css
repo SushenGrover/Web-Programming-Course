@@ -1,0 +1,129 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #181D27;
+}
+.main-wrapper{
+    padding: 0px;
+}
+.header{
+    text-align: center;
+    color: #D0E46D;
+    -webkit-text-stroke: 3px #3A7D44;
+    margin: 10px;
+}
+.header h1{
+    font-size: 50px;
+}
+.main-wrapper hr{
+    height: 2px;
+    color: #D0DB97;
+    background-color: #D0DB97;
+}
+.cover{
+    background-image: url(cover.png);
+    background-size:cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 16rem;
+    overflow: hidden;
+}
+.info{
+    /* background-color: red; */
+    height: 15rem;
+    width: 50%;
+    margin: 0px 0px 0px 100px;
+    padding: 20px 0px 0px 50px;
+    color: #D0DB97;
+    display: grid;
+    gap: 0px;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    font-size: 20px;
+}
+.cover-image-container{
+    background-color: #181D27;
+}
+.cover-image{
+    background-image: url(AB3-311-Autonomous-System-Lab.jpg);
+    margin-top: 40px;
+    width: 25rem;
+    height: 20rem;
+    justify-self: flex-end;
+    background-size: cover;
+    border-radius: 50% 0px 0px 50%;
+    border: 7px solid #D0DB97;
+    border-width: 7px 0px 0px 7px;
+}
+
+
+
+
+
+
+
+
+
+.collapsibles-container {
+    width: 70%;
+    margin: 10px;
+}
+
+.collapsible {
+    background-color: #254D32;
+    color: #D0E46D;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: 2px solid #D0DB97;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: 0.4s;
+    margin-top: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+.active, .collapsible:hover {
+    background-color: #3A7D44;
+}
+.collapsible .icon {
+    float: right;
+    transition: transform 0.2s ease-out;
+}
+.active .icon {
+    transform: rotate(45deg);
+}
+
+.content {
+    border-radius: 0px 0px 10px 10px;
+    padding-top: 2px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #43774d;
+    margin: 0px 0px 0px 0px;
+    color: #D0DB97;
+}
+
+ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+li {
+    margin: 0px 0px 5px 0px;
+}
+li a{
+    width: 100px;
+    display: inline-block;
+    text-decoration: none;
+    color: #D0DB97;
+    background-color: #181D27;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 15px;
+}

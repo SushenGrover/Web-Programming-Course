@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Audio</h3><br>
+    <audio src="Winning Speech.mp3" controls></audio>
+    <h3>Video</h3><br>
+    <video src="Happy Ganesh Chaturthi (Nexseed Club).mp4" height="300" autoplay controls></video>
+    <h3>Canvas</h3><br>
+    <canvas width="400" height="200" style="border:1px solid #000" id="myCanvas"></canvas>
+    <script>
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+        //rectangle with a gradient
+        const gradient = ctx.createLinearGradient(0, 0, canvas.width, 0);
+        gradient.addColorStop(0, "red");
+        gradient.addColorStop(1, "blue");
+        ctx.fillStyle = gradient;
+        ctx.fillRect(0, 0, canvas.width, canvas.height / 2);
+        //circle
+        ctx.beginPath();
+        ctx.arc(200, 150, 50, 0, 2 * Math.PI);
+        ctx.fillStyle = "green";
+        ctx.fill();
+        ctx.stroke();
+    </script>
+</body>
+</html>

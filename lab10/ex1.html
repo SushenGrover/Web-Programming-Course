@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>23BCE1728</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            border: 2px solid black;
+            box-sizing: border-box;
+        }
+        td,th{
+            text-align: left;
+            width: 150px;
+        }
+        #sort-button{
+            width: 150px;
+        }
+        input{
+            width: 100px;
+        }
+        #pid-found-status{
+            width: 400px;
+            height: 50px;
+            margin: 20px 0px 0px 0px;
+        }
+        .range-value{
+            border: 2px solid black;
+            border-radius: 5px;
+            width: 40px;
+            height: 20px;
+            display: inline-block;
+        }
+        .range-container{
+            width: 300px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Exercise 10.1</h2>
+    <table border="1" id="table1">
+        <tr class="table-header-row">
+            <th>P-Id</th>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr class="table-row">
+            <td>1</td>
+            <td>Alen</td>
+            <td>39</td>
+        </tr>
+        <tr class="table-row">
+            <td>2</td>
+            <td>Deena</td>
+            <td>47</td>
+        </tr>
+        <tr class="table-row">
+            <td>3</td>
+            <td>Diana</td>
+            <td>21</td>
+        </tr>
+        <tr class="table-row">
+            <td>4</td>
+            <td>Jack</td>
+            <td>54</td>
+        </tr>
+        <tr class="table-row">
+            <td>5</td>
+            <td>Jain</td>
+            <td>23</td>
+        </tr>
+        <tr class="table-row">
+            <td>6</td>
+            <td>Kelvin</td>
+            <td>61</td>
+        </tr>
+        <tr class="table-row">
+            <td>7</td>
+            <td>Luis</td>
+            <td>69</td>
+        </tr>
+        <tr class="table-row">
+            <td>8</td>
+            <td>Rex</td>
+            <td>49</td>
+        </tr>
+    </table>
+    <button class="sort-button">Sort</button>
+    <br>
+    <br>
+    <div style="border: 2px solid black;width: 450px;padding: 5px;">
+        <label for="">Enter PID to find: </label>
+        <input type="text" id="pid-input">
+        <br>
+        <button id="pid-submit">Submit</button>
+        <br>
+        <div id="pid-found-status">
+            <table id="pid-found-status-table"></table>
+        </div>
+    </div>
+    <br>
+    <div style="border: 2px solid black;width: 450px;padding: 5px;height: 500px;">
+        <h3>Age Range Filter</h3>
+        <div class="range-container">
+            <label for="">Min Range</label>
+            <input type="range" class="range-input" value="20" min="20" max="70">
+            <p class="range-value"></p>
+        </div>
+        <div class="range-container">
+            <label for="">Max Range</label>
+            <input type="range" class="range-input" value="70" min="20" max="70">
+            <p class="range-value"></p>
+        </div>
+        <table border="1" id="table2">
+        </table>
+    </div>
+    <script src="script1.js"></script>
+</body>
+</html>

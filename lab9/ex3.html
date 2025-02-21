@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>23BCE1728</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        tr{
+            border: 2px solid black;
+        }
+        td,th{
+            width: 150px;
+            padding: 5px 10px 5px 10px;
+            height: auto;
+            text-align: left;
+            border: none;
+        }
+        #output-div{
+            border: 1px solid black;
+            width: 100px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Exercise 9.3</h2>
+    <table border="2">
+        <tr>
+            <th>BMI Calculator</th>
+            <td>
+                <select name="" id="gender-input">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <b>Enter Your Weight</b>
+                <br>
+                <label for="">(in pounds)</label>
+                <input type="text" id="weight-input">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <b>Enter Your Height</b>
+                <br>
+                <label for="">(feet)</label>
+                <input type="text" id="feet-input">
+                <br>
+                <label for="">(inches)</label>
+                <input type="text" id="inches-input">
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center;" colspan="2">
+                <button id="calculate-button">Calculate</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Your BMI:</b>
+            </td>
+            <td>
+                <div id="output-div" style="text-align: center;"></div>
+            </td>
+        </tr>
+    </table>
+    <script src="script3.js"></script>
+</body>
+</html>

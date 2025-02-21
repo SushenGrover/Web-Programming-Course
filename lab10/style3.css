@@ -1,0 +1,78 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wrapper{
+    background-color: #9fac91;
+    border: 2px solid black;
+    width: 50vw;
+    height: 77vh;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+}
+.heading{
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+.fruit-image{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+li{
+    margin: 5px 0px 5px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+hr{
+    margin: 5px 0px 0px 0px;
+    background-color: black;
+    height: 1px;
+    border: none;
+    border-radius: 10px;
+}
+input{
+    height: 25px;
+    border: none;
+    border-radius: 10px;
+}
+.fruit-name{
+    /* border: 2px solid black; */
+    width: 100px;
+}
+.fruit-qty{
+    width:50px;
+}
+.info-input-div{
+    padding: 5px 0px 0px 0px;
+}
+ul{
+    padding: 0px;
+    width: 50vw;
+}
+#submit-button{
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(166, 108, 0);
+    color: white;
+    font-weight: bold;
+    height:25px;
+}
+form[name="f1"]{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

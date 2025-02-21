@@ -1,0 +1,50 @@
+svg{
+    overflow : visible;
+}
+@keyframes ball-animation {
+    0% {
+        transform: translate(0px, 0px) rotate(0deg) matrix(1, 0, 0, 1, 0, 0); /* No movement */
+    }
+    25% {
+        transform: translate(50px, 50px) rotate(45deg) matrix(1, 0.5, 0, 1, 0, 0); /* Shear */
+    }
+    50% {
+        transform: translate(100px, 50px) rotate(90deg) matrix(1, 0, 0.5, 1, 0, 0); /* Combined shear */
+    }
+    75% {
+        transform: translate(50px, 100px) rotate(135deg) matrix(1, -0.5, 0, 1, 0, 0); /* Reverxse shear */
+    }
+    100% {
+        transform: translate(0px, 0px) rotate(360deg) matrix(1, 0, 0, 1, 0, 0); /* Reset */
+    }
+}
+.ball-group{
+    animation : ball-animation 5s infinite;
+}
+.svg-container{
+    position: absolute;
+    top:940px;
+    left:550px;
+    display : flex;
+    justify-content: center;
+}
+h3{
+    background-image: linear-gradient(to left,violet,indigo,blue,green,yellow,orange,red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+}
+#content{
+    column-count: 3;
+    column-rule: 2px solid black;
+    line-height: 30pt;
+    background-image: url(output-onlinepngtools.png);
+    background-size: cover;
+    text-align: justify;
+    padding: 10px;
+}
+#dog{
+    position:absolute;
+    top:1100px;
+    left:500px;
+}

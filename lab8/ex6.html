@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>23BCE1728</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .container{
+            border: 2px solid black;
+            margin: 2px;
+            padding: 5px;
+            width: 250px;
+        }
+        .heading{
+            text-align: center;
+            font-weight: bold;
+        }
+        .input-div{
+            margin: 20px 0px 20px 10px;
+        }
+        .output-value{
+            border: 1px solid black;
+            height: 30px;
+            width: 80px;
+            display: inline-block;
+            border-radius: 2px;
+        }
+        .output-div{
+            width: 200px;
+            margin: 20px 0px 20px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        button{
+            width: 100px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Exercise 8.6</h2>
+    <div class="container">
+        <div class="heading">TICKET BOOTH</div>
+        <div class="input-div">
+            <p>Adults (&#8377;10 each)</p>
+            <input type="text" id="i1">
+        </div>
+        <div class="input-div">
+            <p>Children (&#8377;5 each)</p>
+            <input type="text" id="i2">
+        </div>
+        <div class="output-div">
+            <button onclick="compute()">Total</button>
+            <div class="output-value"></div>
+        </div>
+    </div>
+    <script src="script6.js"></script>
+</body>
+</html>

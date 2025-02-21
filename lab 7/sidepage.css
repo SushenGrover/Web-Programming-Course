@@ -1,0 +1,52 @@
+body{
+    background-image : url(https://thumbs.dreamstime.com/b/portraits-different-kind-breeds-dogs-looking-camera-around-borders-image-copy-space-middle-210455030.jpg);
+    background-size : cover;
+    background-repeat : no-repeat;
+}
+ul{
+    font-weight: bold;
+    background-color: aliceblue;
+}
+
+@keyframes ball-animation {
+    0% {
+        transform: translate(0px, 0px) rotate(0deg) matrix(1, 0, 0, 1, 0, 0); /* No movement */
+    }
+    25% {
+        transform: translate(50px, 50px) rotate(45deg) matrix(1, 0.5, 0, 1, 0, 0); /* Shear */
+    }
+    50% {
+        transform: translate(100px, 50px) rotate(90deg) matrix(1, 0, 0.5, 1, 0, 0); /* Combined shear */
+    }
+    75% {
+        transform: translate(50px, 100px) rotate(135deg) matrix(1, -0.5, 0, 1, 0, 0); /* Reverxse shear */
+    }
+    100% {
+        transform: translate(0px, 0px) rotate(360deg) matrix(1, 0, 0, 1, 0, 0); /* Reset */
+    }
+}
+
+svg{
+    overflow : visible;
+}
+
+.ball-group{
+    animation : ball-animation 5s infinite;
+}
+
+.rainbow{
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    font-size : 40px;
+    font-weight : bold;
+}
+
+.description {
+    column-count: 3;
+    column-gap: 30px;
+    line-height: 30pt;
+}
+
+.svg-container{
+    display : flex;
+    justify-content: center;
+}

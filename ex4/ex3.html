@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>23BCE1728</title>
+</head>
+<body>
+    <h1>Exercise 4C</h1>
+    <h3>Product Feedback</h3>
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)+parseInt(c.value)">
+        <table border="1">
+            <tr>
+                <td>Usability:</td>
+                <td>
+                    <input type="range" name="usabilitty" id="a" value="0" min="0" max="5"> 5
+                </td>
+            </tr>
+            <tr>
+                <td>Design:</td>
+                <td>
+                    <input type="range" name="design" id="b" value="0" min="0" max="5"> 5
+                </td>
+            </tr>
+            <tr>
+                <td>Quality:</td>
+                <td>
+                    <input type="range" name="quality" id="c" value="0" min="0" max="5"> 5
+                </td>
+            </tr>
+            <tr>
+                <th align="left">Total:</th>
+                <td>
+                    <output id="x"></output>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
