@@ -31,6 +31,11 @@ The `index.html` page offers a user-friendly interface to navigate through the v
 
 Each section is designed to be collapsible, offering a clean and organized way to access the lab exercises. Please see the screenshots in the root directory to understand how the HTML page looks like.
 
+## Screenshots of starting page
+![Screenshot 2025-02-21 232251](https://github.com/user-attachments/assets/dbd9fc5a-7625-477b-b0be-de6fc16826fb)
+![Screenshot 2025-02-22 003518](https://github.com/user-attachments/assets/ec840ad9-dd7c-4e54-882a-04d660bbd681)
+
+
 ## How to Run the Project
 
 1.  Clone this repository to your local machine.
