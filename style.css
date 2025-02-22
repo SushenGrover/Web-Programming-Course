@@ -127,3 +127,44 @@ li a{
     text-align: center;
     font-size: 15px;
 }
+@media (width<=500px){
+    .header h1{
+        font-size: 35px;
+    }
+    .cover{
+        width: 100%;
+        background-image: none;
+        display: flex;
+        flex-direction: row;
+        height: 12rem;
+        overflow: hidden;
+    }
+    .info{
+        /* background-color: red; */
+        height: 12rem;
+        width: 50%;
+        margin: 20px 0px 0px 20px;
+        padding: 0px 0px 0px 0px;
+        color: #D0DB97;
+        display: grid;
+        gap: 0px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        font-size: 15px;
+    }
+    .cover-image-container{
+        padding: 50px 0px 0px 0px;
+        background-color: #181D27;
+        width: 50%;
+    }
+    .cover-image{
+        background-image: url(AB3-311-Autonomous-System-Lab.jpg);
+        margin-top: 0px;
+        width: 90%;
+        height: 12rem;
+        background-size: cover;
+        border-radius: 50% 0px 0px 50%;
+        border: 5px solid #D0DB97;
+        border-width: 5px 0px 0px 5px;
+    }
+}
