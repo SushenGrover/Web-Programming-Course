@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulate z-index</title>
+    <style>
+        /* Styles for the overlapping divs */
+        .box {
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            border: 2px solid black;
+        }
+
+        #box1 {
+            background-color: red;
+            top: 50px;
+            left: 50px;
+            z-index: 1;
+        }
+
+        #box2 {
+            background-color: blue;
+            top: 100px;
+            left: 100px;
+            z-index: 2;
+        }
+
+        #box3 {
+            background-color: green;
+            top: 150px;
+            left: 150px;
+            z-index: 3;
+        }
+
+        /* Container for controls */
+        .controls {
+            margin-top: 300px;
+        }
+
+        .control-group {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Overlapping boxes -->
+    <div id="box1" class="box"></div>
+    <div id="box2" class="box"></div>
+    <div id="box3" class="box"></div>
+
+    <!-- Controls to adjust z-index -->
+    <div class="controls">
+        <h3>Adjust Z-Index</h3>
+        
+        <!-- Controls for Box 1 -->
+        <div class="control-group">
+            <label>Box 1 (Red): </label>
+            <button onclick="changeZIndex('box1', 'increase')">Increase Z-Index</button>
+            <button onclick="changeZIndex('box1', 'decrease')">Decrease Z-Index</button>
+            <span id="zIndexBox1">Z-Index: 1</span>
+        </div>
+
+        <!-- Controls for Box 2 -->
+        <div class="control-group">
+            <label>Box 2 (Blue): </label>
+            <button onclick="changeZIndex('box2', 'increase')">Increase Z-Index</button>
+            <button onclick="changeZIndex('box2', 'decrease')">Decrease Z-Index</button>
+            <span id="zIndexBox2">Z-Index: 2</span>
+        </div>
+
+        <!-- Controls for Box 3 -->
+        <div class="control-group">
+            <label>Box 3 (Green): </label>
+            <button onclick="changeZIndex('box3', 'increase')">Increase Z-Index</button>
+            <button onclick="changeZIndex('box3', 'decrease')">Decrease Z-Index</button>
+            <span id="zIndexBox3">Z-Index: 3</span>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Function to change the z-index of an element
+        function changeZIndex(boxId, action) {
+            // Get the box element
+            const box = document.getElementById(boxId);
+
+            // Get the current z-index value
+            let currentZIndex = parseInt(window.getComputedStyle(box).zIndex);
+
+            // Adjust the z-index based on the action
+            if (action === 'increase') {
+                currentZIndex++;
+            } else if (action === 'decrease') {
+                currentZIndex--;
+            }
+
+            // Update the z-index value of the box
+            box.style.zIndex = currentZIndex;
+
+            // Update the displayed z-index value
+            document.getElementById(`zIndex${capitalizeFirstLetter(boxId)}`).innerText = `Z-Index: ${currentZIndex}`;
+        }
+
+        // Helper function to capitalize the first letter of a string
+        function capitalizeFirstLetter(string) {
+            return string.charAt(0).toUpperCase() + string.slice(1);
+        }
+    </script>
+</body>
+</html>
