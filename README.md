@@ -1,5 +1,5 @@
 # Web Programming Course Repository
-
+---
 ## Overview
 
 This repository contains all the lab exercises and assignments completed for the Web Programming course (BCSE203E). It serves as a comprehensive collection of my work throughout the semester, demonstrating my understanding and application of various web development concepts.
@@ -11,6 +11,7 @@ This repository contains all the lab exercises and assignments completed for the
 *   **Course Code:** BCSE203E
 *   **Faculty:** Dr. Jenila Livingstone L M
 
+---
 ## Project Structure
 
 The repository is organized as follows:
@@ -19,7 +20,7 @@ The repository is organized as follows:
 *   **Lab Exercises:** Each lab exercise is organized and linked from the index page within collapsible sections.
 *   **`Assignment Sheets/`**: This folder contains the assignment questions provided throughout the course.
 *   **`LMS Submissions/`**: This folder contains the solutions that I submitted for the assignments.
-
+---
 ## Project Details
 
 The `index.html` page offers a user-friendly interface to navigate through the various lab exercises. These exercises cover fundamental concepts of:
@@ -30,12 +31,12 @@ The `index.html` page offers a user-friendly interface to navigate through the v
 *   React
 
 Each section is designed to be collapsible, offering a clean and organized way to access the lab exercises. Please see the screenshots in the root directory to understand how the HTML page looks like.
-
+---
 ## Screenshots of starting page
 ![Screenshot 2025-02-21 232251](https://github.com/user-attachments/assets/dbd9fc5a-7625-477b-b0be-de6fc16826fb)
 ![Screenshot 2025-02-22 003518](https://github.com/user-attachments/assets/ec840ad9-dd7c-4e54-882a-04d660bbd681)
 
-
+---
 ## How to Run the Project
 
 1.  Clone this repository to your local machine.
@@ -47,11 +48,11 @@ Each section is designed to be collapsible, offering a clean and organized way t
     cd [path to the folder where you have cloned the repo]
     ```
 3.  Open `index.html` in your web browser.
-
+---
 ## Contributions
 
 All contributions to this repository were made by me as a part of the Web Programming course requirements.
-
+---
 ## Acknowledgements
 
 I would like to thank Dr. Jenila Livingstone L M for her guidance and support throughout this course.
